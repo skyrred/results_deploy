@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '$%7td02uzuw!$guzf$(e979gp*h*i6
 #DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sogascoterminalresults.herokuapp.com','127.0.0.1']
 
 
 # Application definition
