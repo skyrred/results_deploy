@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<head>
+    <script>
+    function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown1");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+    </script>
+<title>Marks Cloud</title>
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+<meta name="author" content="Skyteam">
+<meta charset="utf-8">
+<meta name="description" content="" >
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Crete+Round|Francois+One|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    .page-content{
+        padding-bottom: 50px;
+    } 
+    
+.body{
+    background-color: beige;
+    display: inline-block;
+}
+
+
+
+/*.dropdown  {
+    float: left;
+    overflow: hidden;
+    color:#c6b097;
+}
+
+.dropdown .dropbtn   {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+ .dropdown:hover .dropbtn {
+    /*background-color: #403f3f;
+    border-bottom: 3px solid white;
+}
+
+/*.dropdown-content {
+    display: none;
+    position: relative;
+    background-color:/*#7B0606#4A148C  ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: darkgray;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    font-family: 'Crete Round', serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #6A1B9A;
+    color:white;
+}
+
+.show {
+    display: block;
+}*/
+   /* .search{
+        float:right;
+    }
+    table,th,td{
+        border:1px solid gray;
+        
+    }
+    th,td{
+        padding: 20px;
+    }
+    th{
+        color:#4A148C;
+    }
+    td{
+        color:#6A1B9A;
+        font:Bold;
+    }
+    table{width:80%;
+    margin:10px 10px 30px 10px ;}
+    /*#4A148C
+    .navbar{
+        display: inline-block;
+        width:90%;
+        background-color: #4A148C;
+        padding:5%;
+        
+    }
+    .navbar span{
+        font-family: 'Lobster', cursive;
+        font-size: 25px;
+    }
+    .navbar a{
+        font-family: 'Crete Round', serif;
+        font-size: 25px;
+        color:gray;
+        text-decoration: none;
+    }
+    .navbar a:hover{
+        color:white;
+        border-bottom: 2px solid white;
+    }*/
+    .navbar-brand{
+        font-family: 'Lobster', cursive;    
+    }
+    body,html{
+        margin:0px;
+        padding: 0px;
+    }
+    .data h2{
+        
+        
+        
+        font-family: 'Francois One', sans-serif;
+    }
+    .data{
+        margin:5px;
+        
+    }
+    .dropbtn{
+        background: transparent;
+        border:none;
+        padding:5px;
+        color:dimgray;
+        font-family: 'Crete Round', serif;
+        cursor: pointer;
+        font-size: 15px;
+    
+    }
+    .dropbtn:hover{
+        color: white;
+        border-bottom: 2px solid white;
+    }
+    .table-title{
+        color:#4A148C;
+        font-family: 'Crete Round', serif;
+    }
+    body{
+        background-color:#bbb;
+    }
+    /*body{
+        background-image: url("5.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }*/
+    .foot-detail{
+        background-color:#4A148C;
+        color:white;
+        padding: 0.3%;
+        
+    }
+    .foot-detail a{
+        text-decoration: none;
+        color:gray;
+        
+    }
+    .foot-detail a:hover{
+        color:white;
+        text-decoration: underline;
+    }
+    .follow-buttons {
+        display: inline-block;
+        
+    }
+    .follow-buttons a{
+        color:gray;
+        text-decoration: none;
+    }
+    .follow-buttons a:hover{
+        color:white;
+        text-decoration: underline;
+    }
+    .data{
+        background-color:#333;
+        width:100%;
+        border-radius: 10px;
+    }
+    .data h2{
+        color:#db2824;
+    }
+    .semesters{
+        overflow: auto;
+        height:200px;
+    }
+    .semesters h3{
+        color:beige;
+        padding:7px;
+        cursor: pointer;
+    }
+    .semesters h3 a{
+        text-decoration: none;
+        color:beige;
+        cursor:pointer;
+    }
+    .content-page{
+        background-color:darkgray;
+    }
+    
+    .btn-style{
+        background-color: #101010d6;
+        color:white;
+        border-radius: 7px;
+    }
+    .btn-style:hover{
+        border:2px solid #db2824;
+        color:#db2824;
+    }
+    .menu{
+        background-color: #7d77774f;
+        
+    }
+    .menu li a {
+        color:beige;
+    }
+    table tr th{
+        color:#db2428;
+        border-bottom: 4px;
+        border-top: 4px;
+    }
+    </style>
+</head>
+<html>
+<body>
+    <!--<center>
+    <div style="background-color: white;width:80%;">
+        
+    <div class="navbar">
+        
+        <span style="color:white;text-align: left;clear: left;float: left;">Terminal results Ogasco</span>
+        
+        <a href="{{user.disconnect}}" style="float:right;margin:5px;">Disconnect</a>
+        <a href="{{user.add_semester}}" style="float:right;margin:5px;">Add Semester</a>
+        </div>
+    <br>
+    
+    <div class="page-content">
+        
+        <div style="background-color:#4A148C;border-radius: 10px;
+                    display: inline-block;width: 80%;padding: 10px;" class="mini_profile">
+            
+            <div class="data">
+            <span><h2>{{user.name}}Mark</h2></span>
+            <br>
+            <span><h2>{{user.email}}gmail@gmail.com</h2></span>
+            <br>
+            <span><h2><!--{{user.num}}3 semesters found </h2></span>
+            </div>
+            <br>
+            <div class="search">
+            <button  class="dropbtn" onclick="myFunction1()"><h3>Filter semesters</h3></button>
+                <center>
+    <div class="dropdown-content" id="myDropdown1">
+        <a href="{{categorys.get_absolute_url}}">First Semester</a>
+        {%for semester in semesters%}
+      <a href="{{categorys.get_absolute_url}}">{{semester.name}}</a>
+        {%endfor%}
+    </div>
+                    </center>
+  </div>
+            </div>
+        
+        
+        
+    <br>
+        <div class="results"></div>
+        <center>
+            <h1 class="table-title"><!--{{semester.name}}First Semester</h1>
+        </center>
+    
+        <table>
+            <tr>
+                <th>Subjects</th>
+                <th>Class scores</th>
+                <th>Exam Scores</th>
+                <th>Results</th>
+            
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>15</td>
+                <td>16</td>
+                <td>15.5</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>15</td>
+                <td>16</td>
+                <td>15.5</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>15</td>
+                <td>16</td>
+                <td>15.5</td>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td>15</td>
+                <td>16</td>
+                <td>15.5</td>
+            </tr>
+        
+        </table>
+    
+    </div>
+        
+        
+        <br>
+        <footer class="foot-detail">
+            <div style="clear: left;">
+            <h4 >Follow us</h4>
+            <div class="follow-buttons">
+                <a href=".">Facebook</a>
+                <a href=".">Instagram</a>
+                <a href=".">Twitter</a>
+                <a href=".">Google+</a>
+                </div></div>
+            <div style="clear:right;">
+            <h4>All rights reserved</h4>
+            <h4>Website created by <a href="http://skyteam.hearokuapp.com">@skyteam</a></h4>
+                </div>
+        </footer>
+    
+        </div>
+
+        </center>
+    -->
+    <center>
+    <div class="container content-page">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Terminal Results Sogasco</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{user.add_semester}}" ><span class="glyphicon glyphicon-plus"></span>Add semester</a></li>
+                <li><a href="{{user.logout}}" ><span class="glyphicon glyphicon-log-out"></span>Log Out</a></li>
+                
+            </ul>
+        </div>
+        </nav>
+        <br>
+        
+        <div class="container data">
+            <div class=" row ">
+                <div class="col-sm-6 text-left">
+                    
+                    <h2 class="">Name {{user.name}}</h2>
+                    <h2 class="">Email {{user.email}}</h2>
+                    <h2 class="">Semesters found {{num}} </h2>
+                        
+                </div>
+                <div class="col-sm-6 ">
+                    <br>
+                    <div class="dropdown text-left">
+                        <button class="btn dropdown-toggle btn-style" type="button" data-toggle="dropdown">
+                        Filter Semesters
+                        <span class="carret"></span>
+                        
+                        </button>
+                        <ul class="dropdown-menu menu">
+                            {% for sem in semesters%}
+                            <li><a href="{{sem.show}}">{{sem.name}}</a></li>
+                            {% endfor %}
+                            
+                        </ul>
+                        </div>       
+            </div>
+            
+    
+    
+    </div>
+            </div>
+        <br>
+        <h2 class="text-center" style="color:#db2824;">{{semester.name}}</h2>
+        <br>
+        <div class="table-responsive">
+            <table class="table ">
+            <tr>
+                <th>Subjects</th>
+                <th>Class scores</th>
+                <th>Exam Scores</th>
+                <th>Results</th>
+            
+            </tr>
+            <tr>
+                <td style="color:darkred;font-size:15px;">English</td>
+                <td>{{marks.English_class}}</td>
+                <td>{{marks.English_exam}}</td>
+                <td>{{marks.English_result}}</td>
+            </tr>
+            <tr>
+                <td style="color:darkred;font-size:15px;">Social</td>
+                <td>{{marks.social_class}}</td>
+                <td>{{marks.social_exam}}</td>
+                <td>{{marks.social_result}}</td>
+            </tr>
+            <tr>
+                <td style="color:darkred;font-size:15px;">Science</td>
+                <td>{{marks.Science_class}}</td>
+                <td>{{marks.Science_exam}}</td>
+                <td>{{marks.Science_result}}</td>
+            </tr>
+            <tr>
+                <td style="color:darkred;font-size:15px;">Maths</td>
+                <td>{{marks.maths_class}}</td>
+                <td>{{marks.maths_exam}}</td>
+                <td>{{marks.maths_result}}</td>
+            </tr>
+        
+        </table>
+        
+        </div>
+        <div class="text-center container">
+            <h1 style="color:#db2824">Never Forget that ...</h1>
+            <blockquote>
+                <p>Marks doesn't describe the quality or the skills of the person but it's only a simple test that we get through in our life. Never feel depressed or disapointed about it or give up just pull up and continue your way and believe that one day you will achieve what you dreamed of </p>
+                <footer>From Skyteam's website</footer>
+            </blockquote>
+        </div>
+        <footer style="background-color: #696969;border-top:3px solid gray;" class="container-fluide">
+        <center>
+        <div class="row ">
+            <div class="col-sm-6">
+                <h3>Follow Us</h3>
+                <ul class="list-unstyled list-inline">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Google+</a></li>
+                </ul>
+                
+            </div>
+            <div class="col-sm-6 ">
+                <h3>All rights reserved</h3>
+                <h4>This site created by <a href="#">@skyteam</a></h4>
+                </div>
+        </div>
+            </center>
+        </footer>
+        
+        </div></center>
+    
+    
+    </body></html>
+
+    
+   

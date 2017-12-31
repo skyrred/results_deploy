@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<head>
+<title>Marks Cloud</title>
+<meta name="author" content="Skyteam">
+<meta charset="utf-8">
+<meta name="description" content="" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function move2(){
+            var e= document.getElementById("login_box");
+            e.scrollIntoView();
+        }
+        function move4(){
+            var e=document.getElementById("register_box");
+            e.scrollIntoView();
+        }
+    </script>
+<style>
+    .navbar{
+        display: inline-block;
+        width:96%;
+        background-color: #4A148C;
+        padding:2%;
+        
+    }
+    .navbar span{
+        font-family: 'Lobster', cursive;
+        font-size: 25px;
+    }
+    .navbar a{
+        font-family: 'Crete Round', serif;
+        font-size: 25px;
+        color:gray;
+        text-decoration: none;
+    }
+    .navbar a:hover{
+        color:white;
+        border-bottom: 2px solid white;
+    }
+    body,html {
+        margin:0;
+        padding:0;
+    }
+    .intro{
+        background-color: #352f2f;
+        height:auto;
+        padding:10px;
+        
+    }
+    .intro h1{
+        color:#db2824;
+        margin:0;
+    }/*#6A1B9A*/
+    .intro h3{
+        color:beige;
+    }
+    .transparent {
+    font-size: 3.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    color:white;
+    letter-spacing: 5px;
+    font-family: bold, Arial, sans-serif;
+  background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width:100%;
+    margin-bottom:-23px;
+}
+    .transparent1 {
+    font-size: 3em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    color:/*darkslategray*/#db2824;
+    font-family: bold, Arial, sans-serif;
+  background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3px 10px 10px 10px;
+    margin-top: 3px;
+}
+    .banner{
+    background-image: url("https://i.imgur.com/lW2TBoA.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100%;
+        padding: 1000px 0px 0px 0px ;
+}
+    .secondbut button{
+    background:transparent;
+    border:3px solid white;
+    border-radius: 25px;
+    color:white;
+    padding:20px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    width:180px;
+}
+.secondbut button:hover{
+    color:#db2824;
+    border:3px solid #db2824;
+    text-decoration: underline;
+}
+    .login h1{
+        color:#db2824;
+    }
+    .login h3{
+        color:#333;
+    }
+    .login{
+        background-color: #a9a9a996;
+    }
+    .email , .pass , .name{
+        width:50%;
+        border : 1px solid white;
+        background-color: #000000c9;
+        border-radius: 8px;
+        padding:8px; 
+        margin:5px;
+        
+    }
+    .subm {
+        border-radius: 10px;
+        margin-bottom: 5px;
+        
+    }
+    .email:hover , .pass:hover , .name:hover{
+        border-color: darkred;
+    }
+    .submit{
+        background-color:#000000c9;
+        border:2px solid;
+        color:white;
+        padding:15px;
+        border-radius:10px;
+        cursor:pointer;
+        width:10%;
+        font: Bold ;
+        font-size: 20px;
+    }
+    .submit:hover{
+        border-color: darkred;
+        color:darkred;
+        
+    }
+    .register{
+        background:#352f2f;
+    }
+    .register h1{
+        color:#db2824;
+    }
+    .register h3 , .register h4{
+        color:beige;
+    }
+    .row div{
+        background-color: #ffffff87;
+    }
+    </style>
+</head>
+<html>
+<body>
+    <!--<div class="navbar">
+        
+        <span style="color:white;text-align: left;clear: left;float: left;">Terminal results Ogasco</span>
+        
+        <a href="{{user.disconnect}}" style="float:right;margin:5px;">login</a>
+        <a href="{{user.add_semester}}" style="float:right;margin:5px;">Register</a>
+        </div>-->
+    <div class="banner container-fluide">
+    <div style="margin-top: -60%;">
+	<!--<h2 class ="txt w3-container">--><h1 class="transparent text-center"> Welcome To Terminal Results Sogasco </h1> <!--</h2>--> <br> <!--<h3 class="txt1 w3-container">--> <h1 class="transparent1 text-center">MARKS CLOUD</h1> </div>
+    
+    <br>
+    <center>
+        
+        <div class="secondbut container col-sm-6" style="display: inline-block;width:100%;">
+            <ul class="list-unstyled list-inline">
+            <li style="margin-right: 5%;"><button style="margin: 5%;" id="testy2"  onclick="move2()">Login</button></li>
+            
+            <li style="margin-right: 5%;"><button style="margin: 5%;" id="testy4"  onclick="move4()">Register</button></li>
+                </ul>
+        </div></center></div>
+    <div class="intro container-fluide">
+        <center>
+            <div class="row">
+            <h1>What about ?</h1>
+                <center>
+            <h3 style="width:60%;">
+            This website is an online cloud for saving marks and it
+            calculate the results for you and save it to access it 
+            whenever you want and visualize it and all of it for
+            free.Share your marks and see your improvement , compare
+            your last semester marks to the newest one. Work hard
+            and see a better version of yourself .</h3></center></div></center>
+        <div class="row container-fluide">
+            <center>
+            <div  class="col-sm-4">
+            <h1 class="text-center" style="color:#db2824;">
+                First
+                </h1>
+                <p class="lead">
+                Login or register and join us to start seeking for improvement , self-developement and seeing a better version of yourself
+                </p>
+                </div>
+            <div  class="col-sm-4">
+            <h1 class="text-center" style="color:#db2824;">
+                Second
+                </h1>
+                <p class="lead">
+                Visit your profile start creating your personalized semesters and adding marks and save them
+                </p>
+                </div>
+            <div  class="col-sm-4">
+            <h1 class="text-center" style="color:#db2824;">
+                Finally
+                </h1>
+                <p class="lead">
+                visit your profile and track your marks whenever you want by our simplified syteme and share them with your classmates
+                </p>
+                </div>
+                </center>
+        </div>
+        
+        </div>
+    <div id="login_box" class="login container-fluid text-center">
+        <center>
+        <h1>You have an account?</h1>
+        <h3>Connect Now and start Improving</h3>
+        
+        <form  action="/login/" method="post">{% csrf_token %}
+            <label style="color:#db2824;" for="log_email">{{log_msg}}</label>
+            <div class="input-group col-xs-5">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  class="form-control " id = "log_email" type="email" placeholder="email ..." name="email">
+                </div>
+            <br>
+            <div class="input-group col-xs-5 ">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input class="form-control "  type="password" name="password" placeholder="password ...">
+            </div>
+            <br>
+            <div class="input-group col-xs-2  ">
+            <input class="subm form-control "  type="submit" value="submit" >
+            </div>
+            
+        </form>
+            </center>
+    </div>
+    <div id="register_box" class="register container-fluid">
+        <center>
+        <h1>You don't have an account ?</h1>
+        <h3>What are you waiting for !!!</h3>
+        <h4>Join now and start seeking to develope yourself and have a new experience of saving your marks</h4>
+        
+            <form action="/register/" method="post">{% csrf_token %}
+                <div class="input-group col-xs-5">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input class="form-control "  type="text" name="name" placeholder="Name ...">
+                </div>
+            <br>
+                <label style="color:#db2824;" for="email_inp">{{msg}}</label>
+            <div class="input-group col-xs-5 ">
+                
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                
+            <input class="form-control "  id="email_inp" type="email" name="email" placeholder="email">
+            </div>
+            <br>
+                <div class="input-group col-xs-5 ">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input class="form-control "  type="password" name="password" placeholder="password ...">
+            </div>
+            <br>
+            <div class="input-group col-xs-2  ">
+            <input class="subm form-control "  type="submit" value="submit" >
+            </div>
+            </form>
+        </center>
+    </div>
+    <footer style="background-color: #a9a9a996;" class="container-fluide">
+        <center>
+        <div class="row ">
+            <div class="col-sm-6">
+                <h3>Follow Us</h3>
+                <ul class="list-unstyled list-inline">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Google+</a></li>
+                </ul>
+                
+            </div>
+            <div class="col-sm-6 ">
+                <h3>All rights reserved</h3>
+                <h4>This site created by <a href="#">@skyteam</a></h4>
+                </div>
+        </div>
+            </center>
+        </footer>
+    
+    </body>
+
+</html>
